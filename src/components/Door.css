@@ -1,0 +1,118 @@
+/* Door.css */
+.main-container {
+    display: flex; /* Flex layout to place items side by side */
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: flex-start; /* Align calendar and message box at the top */
+    box-sizing: border-box;
+    width: 98vw;
+}
+
+.Calendar {
+    flex-grow: 3; /* Take up more space compared to message */
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 1rem; /* Adds space between doors */
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.Calendar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Christmas Calendar.jpg'); /* Path to the background image */
+    background-size: cover; /* Makes the image cover the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    z-index: -1; /* Places the overlay behind the content */
+    max-width: 100%;
+}
+
+.message {
+    flex: 40%; /* Take up less space then calendar */
+    height: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: #7E121D; /* Deep red background */
+    font-size: 1.2rem;
+    color: #CEAC5C; /* Golden letters */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+    box-sizing: border-box;
+    margin: 0 auto; /* Centers message box in the remaining space */
+}
+
+.custom-door {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    aspect-ratio: 1; /* Keeps doors as squares */
+    font-size: 2rem;
+    color: #CEAC5C; /* Golden letters */
+    background-color: rgba(3, 79, 27, 0.3); /* Dark green background with transparency*/
+    border: dashed;
+    border-radius: 2px;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the text */
+    transition: background-color 0.3s, transform 0.2s; /* Add some hover effect */
+}
+
+.custom-door:hover {
+    background-color: #034F1B; /* Dark green background */
+    border-color: #CEAC5C; /* Golden letters */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.custom-door.locked{
+    background-color: #ccc;
+    color:#666;
+    cursor: not-allowed;
+    border-color: #999;
+}
+
+.custom-door::selection{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Special styling for Door 24 */
+.custom-door-last {
+    background-color: #7E121D; /* Deep red background */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px){
+    .custom-door{
+        font-size: 1.2rem; /* Smaller font size for smaller screens */
+        padding: 1vh;
+    }
+    .message {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .Calendar {
+        gap: 1rem; /* Reduce gap between doors*/
+        grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 1.5vh 2vw;
+        flex: auto;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column; /* Stack calendar and message vertically */
+        align-items: center; /* Center-align items when stacked */
+        gap: 2vh; /* Add vertical spacing between elements */
+        padding: 1vh 2vw; /* Reduce padding for smaller screens */
+        box-sizing: border-box;
+        width: 96vw;
+    }
+}
