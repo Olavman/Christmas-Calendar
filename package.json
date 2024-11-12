@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://github.com/Olavman/Christmas-Calendar",
+    "homepage": "https://olavman.github.io/Christmas-Calendar/",
     "scripts": {
         "dev": "vite",
         "build": "vite build",

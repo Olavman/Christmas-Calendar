@@ -39,7 +39,7 @@ function App() {
     const doors = Array.from({ length: 24 }, (_, index) => index + 1);
 
     // Get the current day of the month
-    const currentDay = new Date().getDate()+24;
+    const currentDay = new Date().getDate();
 
     // State to keep track of the selected door's message
     const [selectedMessage, setSelectedMessage] = useState("");
