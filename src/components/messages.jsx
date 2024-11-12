@@ -476,7 +476,7 @@
             </>
         ),
     }, {
-        title: "GREIT Å SLÅ SLAVER SÅ LENGE DE OVERLEVER", // luke 23 test
+        title: "GREIT Å SLÅ SLAVER SÅ LENGE DE OVERLEVER", // luke 23
         reference: "2. Mosebok 21:20-21",
         content: (
             <>
