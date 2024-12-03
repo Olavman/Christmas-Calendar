@@ -1,17 +1,26 @@
 ﻿const messages = [
     {
-        title: "OPPFORDRING TIL BARNEDRAP", // luke 1
-        reference: "Salmenes bok 137:8-9",
+        title: "STEIN DIN ULYDIGE SØNN", // luke 1
+        reference: "5. Mosebok 21:18-21",
         content: (
             <>
-                'Du datter Babel som er herjet, <br />
-                salig er den som gjengjelder <br />
-                det du gjorde mot oss.
+                'Når en mann har en ustyrlig og <br />
+                trassig sønn, som ikke vil høre på <br />
+                sin far og mor, og ikke adlyder dem <br />
+                selv om de tukter ham, da skal <br />
+                foreldrene ta og føre ham til byporten, <br />
+                til de eldste i byen og si til <br />
+                dem: "Denne sønnen vår er ustyrlig <br />
+                og trassig og vil ikke høre på det vi <br />
+                sier. Ødsel og drikkfeldig er han også."
                 <br />
                 <br /><strong>
-                    Salig er den som griper dine barn <br />
-                    og knuser dem mot berget!'
-                </strong>
+                    Da skal alle mennene i byen <br />
+                    steine ham i hjel.
+                </strong><br />
+                <br />
+                Slik skal du rydde <br />
+                det onde hos deg.' <br />
             </>
         ),
     },
@@ -36,27 +45,18 @@
         ),
     },
     {
-        title: "STEIN DIN ULYDIGE SØNN", // luke 3
-        reference: "5. Mosebok 21:18-21",
+        title: "OPPFORDRING TIL BARNEDRAP", // luke 3
+        reference: "Salmenes bok 137:8-9",
         content: (
             <>
-                'Når en mann har en ustyrlig og <br />
-                trassig sønn, som ikke vil høre på <br />
-                sin far og mor, og ikke adlyder dem <br />
-                selv om de tukter ham, da skal <br />
-                foreldrene ta og føre ham til byporten, <br />
-                til de eldste i byen og si til <br />
-                dem: "Denne sønnen vår er ustyrlig <br />
-                og trassig og vil ikke høre på det vi <br />
-                sier. Ødsel og drikkfeldig er han også."
+                'Du datter Babel som er herjet, <br />
+                salig er den som gjengjelder <br />
+                det du gjorde mot oss.
                 <br />
                 <br /><strong>
-                    Da skal alle mennene i byen <br />
-                    steine ham i hjel.
-                </strong><br />
-                <br />
-                Slik skal du rydde <br />
-                det onde hos deg.' <br />
+                    Salig er den som griper dine barn <br />
+                    og knuser dem mot berget!'
+                </strong>
             </>
         ),
     },
